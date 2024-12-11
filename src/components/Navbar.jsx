@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+//import { Link } from "react-scroll";
+import { Link } from 'react-router-dom'; // Import Link
 import Button from "../layouts/Button";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Contact from "../models/Contact";
+import img from "../assets/img/Hasta-Logo.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -26,69 +28,74 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" fixed w-full z-10 text-white">
+    <div className="fixed top-9 w-full z-10 text-customPurple">
       <div>
-        <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+        <div className=" flex flex-row justify-between p-3 md:px-32 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] items-center">
           <div className=" flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500}>
-              <h1 className=" text-2xl font-semibold">WellnessVista.</h1>
+            <div className="h-[68px] bg-white rounded-b-lg flex justify-center items-center p-2 px-4">
+              <img className="w-[180px] h-[63px]" src={img} alt="img" />
+            </div>
             </Link>
           </div>
 
-          <nav className=" hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Home
-            </Link>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              About Us
-            </Link>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Services
-            </Link>
-            <Link
-              to="doctors"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Doctors
-            </Link>
-            <Link
-              to="blog"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Blog
-            </Link>
-          </nav>
+          
+          <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
+  <ul className="flex space-x-8"> {/* Add flex and space-x-8 here */}
+    <li>
+      <Link
+        to="/home" // Use "/" for routing
+        className="hover:text-hoverColor transition-all cursor-pointer"
+      >
+        Home
+      </Link>
+    </li>
+    
+    <li>
+      <Link
+        to="/about" // Use "/" for routing
+        className="hover:text-hoverColor transition-all cursor-pointer"
+      >
+        About Us
+      </Link>
+    </li>
 
-          <div className=" hidden lg:flex">
+    <li>
+      <Link
+        to="/services" // Use "/" for routing
+        className="hover:text-hoverColor transition-all cursor-pointer"
+      >
+        Services
+      </Link>
+    </li>
+    
+    <li>
+      <Link
+        to="/doctors" // Use "/" for routing
+        className="hover:text-hoverColor transition-all cursor-pointer"
+      >
+        Doctors
+      </Link>
+    </li>
+    
+    <li>
+      <Link
+        to="/blog" // Use "/" for routing
+        className="hover:text-hoverColor transition-all cursor-pointer"
+      >
+        Blog
+      </Link>
+    </li>
+  </ul>
+</nav>
+
+
+          <div className=" hidden lg:flex items-center justify-center h-full">
             <button
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="h-[48px] text-customPurple bg-customYellow px-4 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
               onClick={openForm}
             >
-              Contact Us
+              Book an Appointment
             </button>
           </div>
 

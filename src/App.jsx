@@ -1,39 +1,26 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom"; // Import Routes and Route
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
 import Doctors from "./components/Doctors";
-import Blogs from "./components/Blogs";
 import Footer from "./components/Footer";
+import ContactInfo from "./components/ContactInfo"; // Import the new 
 
 const App = () => {
   return (
     <div>
+      <ContactInfo />
       <Navbar />
-
       <main>
-        <div id="home">
-          <Home />
-        </div>
-
-        <div id="about">
-          <About />
-        </div>
-
-        <div id="services">
-          <Services />
-        </div>
-
-        <div id="doctors">
-          <Doctors />
-        </div>
-
-        <div id="blog">
-          <Blogs />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} /> {/* Home Page */}
+          <Route path="/about" element={<About />} /> {/* About Page */}
+          <Route path="/doctors" element={<Doctors />} /> {/* Doctors Page */}
+          <Route path="/services" element={<Services />} /> {/* Services Page */}
+        </Routes>
       </main>
-
       <Footer />
     </div>
   );
