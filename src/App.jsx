@@ -6,7 +6,8 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Doctors from "./components/Doctors";
 import Footer from "./components/Footer";
-import ContactInfo from "./components/ContactInfo"; // Import the new 
+import ContactInfo from "./components/ContactInfo"; 
+import BodyContouring from "./packages/BodyContouring";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/about" element={<About />} /> {/* About Page */}
           <Route path="/doctors" element={<Doctors />} /> {/* Doctors Page */}
           <Route path="/services" element={<Services />} /> {/* Services Page */}
+          <Route path="/packages/bodycontouring" element={<BodyContouring />} /> {/* Services Page */}
         </Routes>
       </main>
       <Footer />

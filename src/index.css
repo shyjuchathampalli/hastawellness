@@ -10,7 +10,11 @@ body {
 }
 
 .slick-slide > div {
-  margin: 0 10px;
+  margin: 0 5px;
+}
+
+.slick-slide {
+  padding: 0 3px; /* Add horizontal padding */
 }
 
 @layer utilities {

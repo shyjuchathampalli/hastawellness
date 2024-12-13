@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //import { Link } from "react-scroll";
 import { Link } from 'react-router-dom'; // Import Link
 import Button from "../layouts/Button";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu, AiOutlineDown } from "react-icons/ai";
 import Contact from "../models/Contact";
 import img from "../assets/img/Hasta-Logo.png";
 
@@ -65,9 +65,51 @@ const Navbar = () => {
         to="/services" // Use "/" for routing
         className="hover:text-hoverColor transition-all cursor-pointer"
       >
-        Services
+        Treatments
       </Link>
     </li>
+
+
+    <li className="relative group">
+  <span
+    className="flex items-center hover:text-hoverColor transition-all cursor-pointer"
+  >
+    Packages<AiOutlineDown
+      className="ml-1 transition-transform duration-300 group-hover:rotate-180"
+    />
+    
+  </span>
+  <ul
+    className="absolute hidden text-customPurple group-hover:block bg-white text-black rounded shadow-lg text-sm min-w-[250px]"
+  >
+    <li>
+      <Link
+        to="/packages/bodycontouring"
+        className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+      >
+        Post Pregnancy Weight Loss
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/packages/obesity-pack"
+        className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+      >
+        Obesity Pack
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/packages/teenager"
+        className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+      >
+        Teenager
+      </Link>
+    </li>
+  </ul>
+</li>
+
+    
     
     <li>
       <Link

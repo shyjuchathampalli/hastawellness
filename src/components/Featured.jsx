@@ -17,9 +17,29 @@ const Featured = () => {
         This process is effective for all skin types and ages. PRP facial rejuvenation is an excellent treatment option for individuals just starting to explore anti-aging and skin rejuvenation. Additionally, PRP facials are great for people looking to maintain healthy skin or enhance it before a big event
         </p>
         <button
-          className="px-6 py-3 bg-white text-[#DABC70] font-semibold rounded-lg hover:bg-gray-200"
+          className="px-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
         >
-          Learn More
+          Post Pregnancy Weight Loss
+        </button>
+        <button
+          className="px-6 mx-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
+        >
+          Obesity pack
+        </button>
+        <button
+          className="px-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
+        >
+          Teenagers Pack
+        </button>
+        <button
+          className="px-6 mx-6  py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
+        >
+          Anti hair fall Pack
+        </button>
+        <button
+          className="px-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
+        >
+          Antil-Aging  Basic Pack
         </button>
       </div>
 
