@@ -84,7 +84,7 @@ const Navbar = () => {
   >
     <li>
       <Link
-        to="/packages/bodycontouring"
+        to="/packages/pregnancywellness"
         className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
       >
         Post Pregnancy Weight Loss
@@ -92,10 +92,10 @@ const Navbar = () => {
     </li>
     <li>
       <Link
-        to="/packages/obesity-pack"
+        to="/packages/bodycontouring"
         className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
       >
-        Obesity Pack
+        Obesity Package
       </Link>
     </li>
     <li>
@@ -103,7 +103,23 @@ const Navbar = () => {
         to="/packages/teenager"
         className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
       >
-        Teenager
+        Teenager's Pack
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/packages/teenager"
+        className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+      >
+        Anti-Hair Fall
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/packages/teenager"
+        className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+      >
+        Anti-Aging
       </Link>
     </li>
   </ul>

@@ -19,20 +19,20 @@ const Consult = () => {
   </a>
   <a href="tel:+9778458884" className="text-lg text-white hover:underline flex items-center">
     <FaPhoneAlt className="mr-2" /> {/* Icon with margin-right */}
-    97784 58884
+    85939 31833
   </a>
           </div>
         </div>
 
         {/* Right side: Book Now Form */}
-        <div className="lg:w-1/2 mt-6 lg:mt-0">
-          <form className="w-full max-w-md space-y-5 p-5 border-l-2 border-dashed border-white">
-            <h3 className="text-4xl font-thin text-center text-backgroundColor">
+        <div className="flex flex-col lg:w-1/2 lg:mt-0 px-10 items-end justify-between">
+          <form className="w-full max-w-md space-y-5 px-5 border-l-2 border-dashed border-white">
+            <h3 className="text-3xl font-thin text-center text-backgroundColor">
               Book an Appointment
             </h3>
             <div className="flex flex-col">
               <input
-                className="py-3 px-2 bg-[#d5f2ec] rounded-lg"
+                className="py-3 px-2 bg-[#ffffff] rounded-lg"
                 type="text"
                 name="userFirstName"
                 id="userFirstName"
@@ -41,7 +41,7 @@ const Consult = () => {
             </div>
             <div className="flex flex-col">
               <input
-                className="py-3 px-2 bg-[#d5f2ec] rounded-lg"
+                className="py-3 px-2 bg-[#ffffff] rounded-lg"
                 type="text"
                 name="userLastName"
                 id="userLastName"
@@ -50,7 +50,7 @@ const Consult = () => {
             </div>
             <div className="flex flex-col">
               <input
-                className="py-3 px-2 bg-[#d5f2ec] rounded-lg"
+                className="py-3 px-2 bg-[#ffffff] rounded-lg"
                 type="email"
                 name="userEmail"
                 id="userEmail"
@@ -59,7 +59,7 @@ const Consult = () => {
             </div>
             <div className="flex flex-col">
               <input
-                className="py-3 px-2 bg-[#d5f2ec] rounded-lg"
+                className="py-3 px-2 bg-[#ffffff] rounded-lg"
                 type="number"
                 name="userNumber"
                 id="userNumber"
@@ -68,17 +68,10 @@ const Consult = () => {
             </div>
             <div className="flex gap-5">
               <button
-                className="bg-backgroundColor text-white px-10 rounded-md active:bg-red-500"
+                className="bg-customPurple text-white px-10 py-2 rounded-md active:bg-red-500"
                 type="submit"
               >
-                Book Appointment
-              </button>
-              <button
-                className="bg-backgroundColor text-white px-10 rounded-md active:bg-red-500"
-                // closeForm function can be added if you want to handle form closure
-                // onClick={closeForm}
-              >
-                Close
+                Book Now
               </button>
             </div>
           </form>

@@ -8,6 +8,7 @@ import Doctors from "./components/Doctors";
 import Footer from "./components/Footer";
 import ContactInfo from "./components/ContactInfo"; 
 import BodyContouring from "./packages/BodyContouring";
+import PregnencyWellness from "./packages/PregnencyWellness";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/doctors" element={<Doctors />} /> {/* Doctors Page */}
           <Route path="/services" element={<Services />} /> {/* Services Page */}
           <Route path="/packages/bodycontouring" element={<BodyContouring />} /> {/* Services Page */}
+          <Route path="/packages/pregnancywellness" element={<PregnencyWellness />} /> {/* Services Page */}
         </Routes>
       </main>
       <Footer />

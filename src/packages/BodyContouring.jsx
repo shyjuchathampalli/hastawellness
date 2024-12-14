@@ -1,28 +1,28 @@
 import React from 'react'
 import Header from "../components/Header";
 import Overview from "../components/Overview";
-import TreatmentsAccordion from "../components/TreatmentsAccordion";
+import ObesityAccordion from "../components/ObesityAccordion";
 import Consult from "../components/Consult";
 import { GiBabyFace  } from "react-icons/gi"; // Import a medical-related icon
-import image from '../assets/img/Comsetic_dentsitry.png';
+import image from '../assets/img/obesity_management.png';
 
 function BodyContouring() {
   return (
     <div>
       <Header
-        title="Post-Pregnancy Wellness Package"
-        caption="Nurturing You: Embrace Your Post-Pregnancy Journey with Tailored Wellness Solutions."
+        title="Obesity Management Package"
+        caption="Achieve Your Weight Loss Goals with Our Comprehensive Package"
         Icon={GiBabyFace } // Pass the icon as a prop
       />
 
 <Overview
-        title="Post-Pregnancy Wellness Package"
-        caption="Nurturing You: Embrace Your Post-Pregnancy Journey with Tailored Wellness Solutions."
-        briefing="Our Post-Pregnancy Wellness Package is designed to support mothers in their journey to regain health and confidence after childbirth. This holistic program includes a combination of targeted treatments and personalized care, ensuring a safe and effective approach to post-pregnancy weight loss, skin rejuvenation, and overall wellness. With expert consultations and specialized therapies, we prioritize your health and well-being while helping you embrace your new role as a mother."
+        title="Obesity Management Pack"
+        caption="Achieve Your Weight Loss Goals with Our Comprehensive Package"
+        briefing="Our Obesity Management Package is a carefully curated program designed to support individuals in their weight loss journey through a combination of advanced therapies and personalized care. This package includes targeted treatments that address various aspects of obesity, ensuring a holistic approach to health and wellness."
         image={image} // Pass the icon as a prop
       />
       
-  <TreatmentsAccordion/>    
+  <ObesityAccordion/>    
   <Consult/>    
     </div>
   )
