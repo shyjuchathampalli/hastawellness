@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import Overview from "../components/Overview";
 import TreatmentsAccordion from "../components/TreatmentsAccordion";
 import Consult from "../components/Consult";
-import { GiBabyFace  } from "react-icons/gi"; // Import a medical-related icon
 import image from '../assets/img/pregnancy_wellness.png';
 import icon from '../assets/img/motherhood.png';
 

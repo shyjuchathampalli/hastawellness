@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/img/Hasta-Logo.png";
+import img from "../assets/img/Hasta-Logo2.png";
 import { FaUserMd, FaStethoscope } from "react-icons/fa";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
         {/* First Grid: Logo and Caption */}
         <div className="flex flex-col">
           <div className="mb-4">
-          <img className="w-[180px] h-[63px]" src={img} alt="img" />
+          <img className="w-[143px] h-[50px]" src={img} alt="img" />
             <p className="mt-3">Your trusted partner for healthcare excellence.</p>
           </div>
           <button className="flex items-center gap-2 border-2 border-white text-white px-4 py-2 rounded-md mb-2 hover:bg-white hover:text-[#5A3E67]">
@@ -57,14 +57,14 @@ const Footer = () => {
               Subscribe
             </button>
           </form>
-          <p className="mb-1">Phone: +1 234 567 890</p>
-          <p>Email: contact@example.com</p>
+          <p className="mb-1">Phone: +91 97784 58883</p>
+          <p>Email: hello@hastawellnessclinic.com</p>
         </div>
       </div>
 
       {/* Copyright Section */}
       <div className="text-center text-sm mt-6">
-        <p>© 2024 Your Company. All Rights Reserved.</p>
+        <p>© 2024 Hasta Wellness Clinic. All Rights Reserved.</p>
       </div>
     </div>
   );

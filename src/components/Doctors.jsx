@@ -92,13 +92,13 @@ const Doctors = () => {
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
           <button
-            className=" bg-[#DABC70] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+            className=" bg-[#DABC70] text-backgroundColor px-3 h-10 rounded-lg active:bg-[#ade9dc]"
             onClick={() => slider.current.slickPrev()}
           >
             <FaArrowLeft size={25} />
           </button>
           <button
-            className=" bg-[#DABC70] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+            className=" bg-[#DABC70] text-backgroundColor px-3 h-10 rounded-lg active:bg-[#ade9dc]"
             onClick={() => slider.current.slickNext()}
           >
             <FaArrowRight size={25} />

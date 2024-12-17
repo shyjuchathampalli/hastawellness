@@ -34,13 +34,13 @@ const Navbar = () => {
           <div className=" flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500}>
             <div className="h-[68px] bg-white rounded-b-lg flex justify-center items-center p-2 px-4">
-              <img className="w-[180px] h-[63px]" src={img} alt="img" />
+              <img className="w-[143px] h-[50px]" src={img} alt="img" />
             </div>
             </Link>
           </div>
 
           
-          <nav className="hidden lg:flex flex-row items-center text-lg font-medium gap-8">
+          <nav className="hidden lg:flex flex-row items-center text-sm font-medium gap-8">
   <ul className="flex space-x-8"> {/* Add flex and space-x-8 here */}
     <li>
       <Link
@@ -51,26 +51,113 @@ const Navbar = () => {
       </Link>
     </li>
     
-    <li>
-      <Link
-        to="/about" // Use "/" for routing
-        className="hover:text-hoverColor transition-all cursor-pointer"
-      >
-        About Us
-      </Link>
-    </li>
-
-    <li>
-      <Link
-        to="/services" // Use "/" for routing
-        className="hover:text-hoverColor transition-all cursor-pointer"
-      >
-        Treatments
-      </Link>
-    </li>
-
 
     <li className="relative group">
+  <span
+    className="flex items-center hover:text-hoverColor transition-all cursor-pointer"
+  >
+    Treatments<AiOutlineDown
+      className="ml-1 transition-transform duration-300 group-hover:rotate-180"
+    />
+    
+  </span>
+  <ul
+    className="absolute hidden text-customPurple group-hover:block bg-white text-black rounded shadow-lg text-sm min-w-[250px]"
+  >
+    <li>
+  <Link
+    to="/treatments/cosmetic-dentistry"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Cosmetic Dentistry
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/laser-hair-removal"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Laser Hair Removal
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/anti-aging"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Anti-Aging
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/smile-designing"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Smile Designing
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/prp-treatment"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    PRP Treatment
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/chemical-peels"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Chemical Peels
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/carbon-peels"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Carbon Peels
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/mesotherapy"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Mesotherapy
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/body-contouring"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Body Contouring
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/gum-treatment"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Gum Treatment
+  </Link>
+</li>
+<li>
+  <Link
+    to="/treatments/tattoo-removal"
+    className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Tattoo Removal
+  </Link>
+</li>
+
+  </ul>
+</li>
+
+
+<li className="relative group">
   <span
     className="flex items-center hover:text-hoverColor transition-all cursor-pointer"
   >
@@ -100,7 +187,7 @@ const Navbar = () => {
     </li>
     <li>
       <Link
-        to="/packages/teenager"
+        to="/packages/teenagerspack"
         className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
       >
         Teenager's Pack
@@ -108,7 +195,7 @@ const Navbar = () => {
     </li>
     <li>
       <Link
-        to="/packages/teenager"
+        to="/packages/antihairfallpack"
         className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
       >
         Anti-Hair Fall
@@ -116,7 +203,7 @@ const Navbar = () => {
     </li>
     <li>
       <Link
-        to="/packages/teenager"
+        to="/packages/antiagingpack"
         className="block px-4 py-2 hover:bg-hoverColor hover:text-white transition-all"
       >
         Anti-Aging
@@ -124,6 +211,16 @@ const Navbar = () => {
     </li>
   </ul>
 </li>
+
+
+<li>
+      <Link
+        to="/about" // Use "/" for routing
+        className="hover:text-hoverColor transition-all cursor-pointer"
+      >
+        About Us
+      </Link>
+    </li>
 
     
     

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        hoverColor: "#FFC000",
+        hoverColor: "#DABC70",
         brightColor: "#dd8036",
         backgroundColor: "#ffffff",
         customPurple: '#5A3E67',

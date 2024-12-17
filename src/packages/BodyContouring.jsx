@@ -3,8 +3,8 @@ import Header from "../components/Header";
 import Overview from "../components/Overview";
 import ObesityAccordion from "../components/ObesityAccordion";
 import Consult from "../components/Consult";
-import { GiBabyFace  } from "react-icons/gi"; // Import a medical-related icon
-import image from '../assets/img/obesity_management.png';
+import image from '../assets/img/obesity-package.png';
+import icon from '../assets/img/fitness-icon.png';
 
 function BodyContouring() {
   return (
@@ -12,7 +12,7 @@ function BodyContouring() {
       <Header
         title="Obesity Management Package"
         caption="Achieve Your Weight Loss Goals with Our Comprehensive Package"
-        Icon={GiBabyFace } // Pass the icon as a prop
+        Icon={icon } // Pass the icon as a prop
       />
 
 <Overview

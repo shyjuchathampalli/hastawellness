@@ -147,33 +147,33 @@ const Treatments = () => {
         </div>
         
       </div>
-      <div className="flex justify-center gap-4 mb-6 mt-4">
+      <div className="flex flex-wrap justify-center gap-4 mb-6 mt-4 sm:mt-2">
         {categories.map((category, index) => (
           <button
             key={index}
-            className={`px-4 py-2 rounded-lg font-semibold ${
+            className={`px-3 rounded-lg font-light h-10 text-xs ${
               activeCategory === category
                 ? "bg-[#DABC70] text-white"
                 : "bg-[#D9D9D9] text-backgroundColor"
-            }`}
+            } whitespace-nowrap`}
             onClick={() => setActiveCategory(category)}
           >
             {category}
           </button>
         ))}
 
-<div className="flex gap-5 mt-4 lg:mt-0">
+<div className="flex gap-5 lg:mt-0">
           <button
-            className="bg-[#DABC70] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+            className="bg-[#DABC70] text-backgroundColor px-3 h-10 rounded-lg active:bg-[#ade9dc]"
             onClick={() => slider.current.slickPrev()}
           >
-            <FaArrowLeft size={25} />
+            <FaArrowLeft size={20} />
           </button>
           <button
-            className="bg-[#DABC70] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+            className="bg-[#DABC70] text-backgroundColor px-3 h-10 rounded-lg active:bg-[#ade9dc]"
             onClick={() => slider.current.slickNext()}
           >
-            <FaArrowRight size={25} />
+            <FaArrowRight size={20} />
           </button>
         </div>
       </div>

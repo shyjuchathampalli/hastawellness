@@ -5,7 +5,7 @@ import featured from '../assets/img/featured.png';
 const Featured = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row items-center justify-between px-10 lg:px-32 mt-16"
+      className="flex flex-col lg:flex-row items-center justify-between sm:px-10 pt-10 lg:px-32 mt-16"
       style={{ backgroundColor: "#DABC70" }}
     >
       {/* Left Section */}
