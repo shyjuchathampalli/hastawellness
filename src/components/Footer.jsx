@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from 'react-router-dom'; // Import Link
 import img from "../assets/img/Hasta-Logo2.png";
-import { FaUserMd, FaStethoscope } from "react-icons/fa";
+import { FaUserMd, FaStethoscope, FaFacebookF, FaInstagram, FaLinkedinIn  } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,33 +15,186 @@ const Footer = () => {
             <p className="mt-3">Your trusted partner for healthcare excellence.</p>
           </div>
           <button className="flex items-center gap-2 border-2 border-white text-white px-4 py-2 rounded-md mb-2 hover:bg-white hover:text-[#5A3E67]">
-  <FaUserMd className="text-lg" /> Find a Doctor
+  <FaUserMd className="text-lg" />
+  <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Find a Doctor
+                    </Link>
 </button>
 <button className="flex items-center gap-2 border-2 border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-[#5A3E67]">
-  <FaStethoscope className="text-lg" /> Explore Treatment
+  <FaStethoscope className="text-lg" />
+  <Link
+                      to="/packages/teenagerspack" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Explore Treatment
+                    </Link>
 </button>
-
+<div className="flex gap-4 mt-4">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full text-white hover:bg-white hover:text-[#1877F2]"
+        >
+          <FaFacebookF />
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full text-white hover:bg-white hover:text-[#C13584]"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full text-white hover:bg-white hover:text-[#0A66C2]"
+        >
+          <FaLinkedinIn />
+        </a>
+      </div>
         </div>
 
         {/* Second Grid: Menu 1 */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Menu 1</h3>
+          <h3 className="text-lg font-semibold mb-3">Clinic</h3>
           <ul>
-            <li className="mb-2 hover:underline cursor-pointer">Home</li>
-            <li className="mb-2 hover:underline cursor-pointer">About Us</li>
-            <li className="mb-2 hover:underline cursor-pointer">Services</li>
-            <li className="hover:underline cursor-pointer">Contact</li>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Home
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+              <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      About Us
+                    </Link>
+            </li>
+          </ul>
+
+          <h3 className="text-lg font-semibold mb-3 mt-6">Dental</h3>
+          <ul>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Cosmetic Dentistry
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+              <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Smile Designing
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Gum Treatment
+                    </Link>
+            </li>
+          </ul>
+
+          <h3 className="text-lg font-semibold mb-3 mt-6">Hair care</h3>
+          <ul>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Cosmetic Dentistry
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+              <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Smile Designing
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Gum Treatment
+                    </Link>
+            </li>
           </ul>
         </div>
 
         {/* Third Grid: Menu 2 */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Menu 2</h3>
+        <h3 className="text-lg font-semibold mb-3 mt-6">Skin care</h3>
           <ul>
-            <li className="mb-2 hover:underline cursor-pointer">Blog</li>
-            <li className="mb-2 hover:underline cursor-pointer">FAQs</li>
-            <li className="mb-2 hover:underline cursor-pointer">Careers</li>
-            <li className="hover:underline cursor-pointer">Support</li>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Anti-aging
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+              <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Chemical Peel
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Carbon Peel
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Mesotherapy
+                    </Link>
+            </li>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Tattoo Removal
+                    </Link>
+            </li>
+          </ul>
+
+          <h3 className="text-lg font-semibold mb-3 mt-6">Diet and Body</h3>
+          <ul>
+            <li className="mb-2 hover:underline cursor-pointer">
+            <Link
+                      to="/about" // Use "/" for routing
+                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
+                    >
+                      Body Contouring
+                    </Link>
+            </li>
           </ul>
         </div>
 
