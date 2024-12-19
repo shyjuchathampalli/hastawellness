@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Link } from 'react-router-dom'; // Import Link
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,66 +25,77 @@ const treatmentsData = [
     img: image1,
     name: "Cosmetic Dentistry",
     category: "Dental",
+    path: "/treatments/cosmetic-dentistry",
     description: "Enhance your smile focusing on improving the appearance of teeth and gums through procedures like whitening, veneers, and bonding for a confident, radiant look",
   },
   {
     img: image2,
     name: "Laser Hair Removal",
     category: "Hair Care",
+    path: "/treatments/laser-hair-removal",
     description: " Experience smooth skin with laser hair removal. Enjoy long-lasting results with minimal discomfort for a confident, hair-free appearance",
   },
   {
     img: image3,
     name: "Anti-Aging",
     category: "Skin Care",
+    path: "/treatments/anti-aging",
     description: "Reduce the visible signs of aging, such as wrinkles and fine lines, restoring youthful skin through various procedures that promote collagen production and skin elasticity.",
   },
   {
     img: image4,
     name: "Smile Designing",
     category: "Dental",
+    path: "/treatments/smile-designing",
     description: "Create a personalized smile makeover, enhancing facial aesthetics and boosting confidence through tailored dental treatments and cosmetic procedures.",
   },
   {
     img: image5,
     name: "PRP Treatment",
     category: "Hair Care",
+    path: "/treatments/prp-treatment",
     description: "PRP (Platelet-Rich Plasma) treatment utilizes your body's own healing properties to rejuvenate skin and promote hair growth, offering a natural solution for enhanced beauty and vitality.",
   },
   {
     img: image6,
     name: "Chemical Peels",
     category: "Skin Care",
+    path: "/treatments/chemical-peels",
     description: "Chemical peels exfoliate the skin's surface to reveal a smoother, brighter complexion. They effectively treat issues like acne scars, pigmentation, and signs of aging for rejuvenated skin.",
   },
   {
     img: image7,
     name: "Carbon Peels",
     category: "Skin Care",
+    path: "/treatments/carbon-peels",
     description: "Carbon peels utilize activated carbon to deeply cleanse pores and exfoliate the skin. This treatment helps improve skin texture, reduce oiliness, and combat acne for a clearer complexion.",
   },
   {
     img: image8,
     name: "Mesotherapy",
     category: "Skin Care",
+    path: "/treatments/mesotherapy",
     description: "Mesotherapy involves injecting vitamins, enzymes, or hormones into the skin to rejuvenate and tighten it. This non-surgical treatment enhances hydration and promotes a youthful appearance.",
   },
   {
     img: image9,
     name: "Body Contouring",
     category: "Diet and Body Contouring",
+    path: "/treatments/body-contouring",
     description: "Body contouring reshapes areas of the body through non-invasive techniques like CoolSculpting or liposuction. Achieve your desired silhouette with targeted fat reduction for enhanced body confidence.",
   },
   {
     img: image10,
     name: "Gum Treatment",
     category: "Dental",
+    path: "/treatments/gum-treatment",
     description: "Gum treatments focus on improving gum health through procedures like scaling, root planing, or gum grafting. Healthy gums are essential for overall oral health and an attractive smile.",
   },
   {
     img: image11,
     name: "Tattoo Removal",
     category: "Skin Care",
+    path: "/treatments/tattoo-removal",
     description: "Tattoo removal employs advanced laser technology to break down ink particles in the skin. This effective method gradually fades tattoos for those seeking to erase past ink choices.",
   },
 ];
@@ -196,7 +208,13 @@ const Treatments = () => {
     <button
       className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#DABC70] text-white text-sm px-6 py-2 rounded-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"
     >
-      Explore Treatment
+      
+      <Link
+    to={treatment.path}
+    className="block px-4 py-2 txt-xs font-thin hover:bg-hoverColor hover:text-white transition-all"
+  >
+    Explore Treatment
+  </Link>
     </button>
   </div>
   <div className="flex flex-col justify-center items-center">
