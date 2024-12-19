@@ -34,7 +34,7 @@ const Footer = () => {
 </button>
 <div className="flex gap-4 mt-4">
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/hastawellnesstrivandrum"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full text-white hover:bg-white hover:text-[#1877F2]"
@@ -42,20 +42,12 @@ const Footer = () => {
           <FaFacebookF />
         </a>
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/hasta_wellness/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full text-white hover:bg-white hover:text-[#C13584]"
         >
           <FaInstagram />
-        </a>
-        <a
-          href="https://www.linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full text-white hover:bg-white hover:text-[#0A66C2]"
-        >
-          <FaLinkedinIn />
         </a>
       </div>
         </div>
@@ -86,7 +78,7 @@ const Footer = () => {
           <ul>
             <li className="mb-2 hover:underline cursor-pointer">
             <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/cosmetic-dentistry" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Cosmetic Dentistry
@@ -94,7 +86,7 @@ const Footer = () => {
             </li>
             <li className="mb-2 hover:underline cursor-pointer">
               <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/smile-designing" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Smile Designing
@@ -102,7 +94,7 @@ const Footer = () => {
             </li>
             <li className="mb-2 hover:underline cursor-pointer">
             <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/gum-treatment" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Gum Treatment
@@ -114,26 +106,18 @@ const Footer = () => {
           <ul>
             <li className="mb-2 hover:underline cursor-pointer">
             <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/laser-hair-removal" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
-                      Cosmetic Dentistry
+                      Laser Hair Removal
                     </Link>
             </li>
             <li className="mb-2 hover:underline cursor-pointer">
               <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/prp-treatment" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
-                      Smile Designing
-                    </Link>
-            </li>
-            <li className="mb-2 hover:underline cursor-pointer">
-            <Link
-                      to="/about" // Use "/" for routing
-                      className="hover:text-hoverColor transition-all text-sm cursor-pointer"
-                    >
-                      Gum Treatment
+                      PRP Treatment
                     </Link>
             </li>
           </ul>
@@ -145,7 +129,7 @@ const Footer = () => {
           <ul>
             <li className="mb-2 hover:underline cursor-pointer">
             <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/anti-aging" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Anti-aging
@@ -153,7 +137,7 @@ const Footer = () => {
             </li>
             <li className="mb-2 hover:underline cursor-pointer">
               <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/chemical-peels" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Chemical Peel
@@ -161,7 +145,7 @@ const Footer = () => {
             </li>
             <li className="mb-2 hover:underline cursor-pointer">
             <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/carbon-peels" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Carbon Peel
@@ -169,7 +153,7 @@ const Footer = () => {
             </li>
             <li className="mb-2 hover:underline cursor-pointer">
             <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/mesotherapy" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Mesotherapy
@@ -177,7 +161,7 @@ const Footer = () => {
             </li>
             <li className="mb-2 hover:underline cursor-pointer">
             <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/tattoo-removal" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Tattoo Removal
@@ -189,7 +173,7 @@ const Footer = () => {
           <ul>
             <li className="mb-2 hover:underline cursor-pointer">
             <Link
-                      to="/about" // Use "/" for routing
+                      to="/treatments/body-contouring" // Use "/" for routing
                       className="hover:text-hoverColor transition-all text-sm cursor-pointer"
                     >
                       Body Contouring

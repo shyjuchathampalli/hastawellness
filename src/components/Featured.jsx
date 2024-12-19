@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom'; 
 import featured from '../assets/img/featured.png';
 
 const Featured = () => {
@@ -19,27 +19,37 @@ const Featured = () => {
         <button
           className="px-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
         >
+          <Link to="/packages/pregnancywellness" className="block hover:bg-hoverColor hover:text-white transition-all">
           Post Pregnancy Weight Loss
+          </Link>
         </button>
         <button
           className="px-6 mx-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
         >
-          Obesity pack
+          <Link to="/packages/bodycontouring" className="block hover:bg-hoverColor hover:text-white transition-all">
+                    Obesity Package
+                    </Link>
         </button>
         <button
           className="px-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
         >
-          Teenagers Pack
+          <Link to="/packages/teenagerspack" className="block hover:bg-hoverColor hover:text-white transition-all">
+                    Teenager's Pack
+                    </Link>
         </button>
         <button
           className="px-6 mx-6  py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
         >
-          Anti hair fall Pack
+          <Link to="/packages/antihairfallpack" className="block hover:bg-hoverColor hover:text-white transition-all">
+                    Anti-Hair Fall
+                    </Link>
         </button>
         <button
           className="px-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
         >
-          Antil-Aging  Basic Pack
+          <Link to="/packages/antiagingpack" className="block hover:bg-hoverColor hover:text-white transition-all">
+                    Anti-Aging
+                    </Link>
         </button>
       </div>
 

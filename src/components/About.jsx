@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/img/about.jpg";
+import img from "../assets/img/about.png";
 
 const About = () => {
   return (
@@ -7,22 +7,13 @@ const About = () => {
       <div className=" w-full lg:w-3/4 space-y-4">
         <h1 className=" text-4xl font-semibold text-center lg:text-start">About Us</h1>
         <p className=" text-justify lg:text-start">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-          labore rerum tempore tenetur commodi natus quos itaque voluptatum
-          repudiandae nostrum accusantium vero voluptate aspernatur totam,
-          laboriosam aut, et quae consequatur?
+        Hasta Wellness is a premier health and wellness clinic dedicated to enhancing the well-being of its clients. Located at 1st Floor, Anjali Arcade, Near Nippon Toyota, Technopark Phase 3 Service Road, Kazhakkoottam, Thiruvananthapuram, Kerala 695582, the clinic specializes in skin care, dental treatments, hair care, and body contouring.
         </p>
         <p className="text-justify lg:text-start">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quia
-          suscipit illum, numquam incidunt nostrum dolor officia doloremque
-          cupiditate, placeat explicabo sed iure atque neque quidem ipsam!
-          Dolor, minus reiciendis.
+        In addition to aesthetic services, Hasta Wellness provides targeted packages for post-pregnancy weight loss, obesity management, and tailored solutions for teenagers dealing with skin issues. The clinic is praised for its hygienic environment and personalized care, as reflected in numerous positive reviews from satisfied patients.
         </p>
         <p className="text-justify lg:text-start">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, illum.
-          Accusantium ab expedita veniam nobis aut, in rerum repellendus!
-          Exercitationem libero recusandae corrupti accusantium reiciendis in
-          placeat illo maxime ea.
+        Among its standout offerings is the PRP facial rejuvenation, a cutting-edge treatment that utilizes the patient’s own platelet-rich plasma to stimulate collagen production, reduce wrinkles, and improve skin texture. This non-invasive procedure is effective for all skin types and ages, making it an ideal choice for those beginning their anti-aging journey or preparing for special events.
         </p>
       </div>
       <div className=" w-full lg:w-3/4">

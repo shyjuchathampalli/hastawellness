@@ -404,6 +404,7 @@ const toggleDropdown = (menu) => {
     )}
   </li>
 
+
   <li>
     <div
       className="flex justify-between items-center px-4 py-3 cursor-pointer hover:bg-hoverColor transition-all"
@@ -417,6 +418,45 @@ const toggleDropdown = (menu) => {
         <li>
           <Link to="/treatments/body-contouring" className="block px-6 py-2 hover:bg-hoverColor hover:text-white transition-all">
             Body Contouring
+          </Link>
+        </li>
+      </ul>
+    )}
+  </li>
+
+  <li>
+    <div
+      className="flex justify-between items-center px-4 py-3 cursor-pointer hover:bg-hoverColor transition-all"
+      onClick={() => toggleDropdown("haircare")}
+    >
+      <span>Packages</span>
+      <AiOutlineDown className={`ml-1 transition-transform ${activeMenu === "haircare" ? "rotate-180" : ""}`} />
+    </div>
+    {activeMenu === "haircare" && (
+      <ul className="bg-gray-50 text-sm text-customPurple">
+        <li>
+          <Link to="/packages/pregnancywellness" className="block px-6 py-2 hover:bg-hoverColor hover:text-white transition-all">
+          Post Pregnancy Weight Loss
+          </Link>
+        </li>
+        <li>
+          <Link to="/packages/bodycontouring" className="block px-6 py-2 hover:bg-hoverColor hover:text-white transition-all">
+          Obesity Package
+          </Link>
+        </li>
+        <li>
+          <Link to="/packages/teenagerspack" className="block px-6 py-2 hover:bg-hoverColor hover:text-white transition-all">
+          Teenager's Pack
+          </Link>
+        </li>
+        <li>
+          <Link to="/packages/antihairfallpack" className="block px-6 py-2 hover:bg-hoverColor hover:text-white transition-all">
+          Anti-Hair Fall
+          </Link>
+        </li>
+        <li>
+          <Link to="/packages/antiagingpack" className="block px-6 py-2 hover:bg-hoverColor hover:text-white transition-all">
+          Anti-Aging
           </Link>
         </li>
       </ul>
