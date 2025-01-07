@@ -24,6 +24,7 @@ const treatmentsData = [
   {
     img: image1,
     name: "Cosmetic Dentistry",
+    alt: "Best Dental Clinic in Trivandrum",
     category: "Dental",
     path: "/treatments/cosmetic-dentistry",
     description: "Enhance your smile focusing on improving the appearance of teeth and gums through procedures like whitening, veneers, and bonding for a confident, radiant look",
@@ -31,6 +32,7 @@ const treatmentsData = [
   {
     img: image2,
     name: "Laser Hair Removal",
+    alt: "Best Hair care centre in Trivandrum",
     category: "Hair Care",
     path: "/treatments/laser-hair-removal",
     description: " Experience smooth skin with laser hair removal. Enjoy long-lasting results with minimal discomfort for a confident, hair-free appearance",
@@ -38,6 +40,7 @@ const treatmentsData = [
   {
     img: image3,
     name: "Anti-Aging",
+    alt: "Best Skin Specialist in Trivandrum",
     category: "Skin Care",
     path: "/treatments/anti-aging",
     description: "Reduce the visible signs of aging, such as wrinkles and fine lines, restoring youthful skin through various procedures that promote collagen production and skin elasticity.",
@@ -45,6 +48,7 @@ const treatmentsData = [
   {
     img: image4,
     name: "Smile Designing",
+    alt: "Best Dental Clinic in Trivandrum",
     category: "Dental",
     path: "/treatments/smile-designing",
     description: "Create a personalized smile makeover, enhancing facial aesthetics and boosting confidence through tailored dental treatments and cosmetic procedures.",
@@ -52,6 +56,7 @@ const treatmentsData = [
   {
     img: image5,
     name: "PRP Treatment",
+    alt: "Best Hair care centre in Trivandrum",
     category: "Hair Care",
     path: "/treatments/prp-treatment",
     description: "PRP (Platelet-Rich Plasma) treatment utilizes your body's own healing properties to rejuvenate skin and promote hair growth, offering a natural solution for enhanced beauty and vitality.",
@@ -59,6 +64,7 @@ const treatmentsData = [
   {
     img: image6,
     name: "Chemical Peels",
+    alt: "Best Skin Specialist in Trivandrum",
     category: "Skin Care",
     path: "/treatments/chemical-peels",
     description: "Chemical peels exfoliate the skin's surface to reveal a smoother, brighter complexion. They effectively treat issues like acne scars, pigmentation, and signs of aging for rejuvenated skin.",
@@ -66,6 +72,7 @@ const treatmentsData = [
   {
     img: image7,
     name: "Carbon Peels",
+    alt: "Best Skin Specialist in Trivandrum",
     category: "Skin Care",
     path: "/treatments/carbon-peels",
     description: "Carbon peels utilize activated carbon to deeply cleanse pores and exfoliate the skin. This treatment helps improve skin texture, reduce oiliness, and combat acne for a clearer complexion.",
@@ -74,6 +81,7 @@ const treatmentsData = [
     img: image8,
     name: "Mesotherapy",
     category: "Skin Care",
+    alt: "Best Skin Specialist in Trivandrum",
     path: "/treatments/mesotherapy",
     description: "Mesotherapy involves injecting vitamins, enzymes, or hormones into the skin to rejuvenate and tighten it. This non-surgical treatment enhances hydration and promotes a youthful appearance.",
   },
@@ -81,12 +89,14 @@ const treatmentsData = [
     img: image9,
     name: "Body Contouring",
     category: "Diet and Body Contouring",
+    alt: "Best Dietitian in Trivandrum",
     path: "/treatments/body-contouring",
     description: "Body contouring reshapes areas of the body through non-invasive techniques like CoolSculpting or liposuction. Achieve your desired silhouette with targeted fat reduction for enhanced body confidence.",
   },
   {
     img: image10,
     name: "Gum Treatment",
+    alt: "Best Dental Clinic in Trivandrum",
     category: "Dental",
     path: "/treatments/gum-treatment",
     description: "Gum treatments focus on improving gum health through procedures like scaling, root planing, or gum grafting. Healthy gums are essential for overall oral health and an attractive smile.",
@@ -94,6 +104,7 @@ const treatmentsData = [
   {
     img: image11,
     name: "Tattoo Removal",
+    alt: "Best Tattoo Removal in Trivandrum",
     category: "Skin Care",
     path: "/treatments/tattoo-removal",
     description: "Tattoo removal employs advanced laser technology to break down ink particles in the skin. This effective method gradually fades tattoos for those seeking to erase past ink choices.",
@@ -150,9 +161,9 @@ const Treatments = () => {
     <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-16">
       <div className="flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
         <div>
-          <h1 className="text-4xl font-semibold text-center lg:text-start">
+          <h2 className="text-4xl font-semibold text-center lg:text-start">
             Our Treatments
-          </h1>
+          </h2>
           <p className="mt-2 text-center lg:text-start">
           Explore a range of advanced treatments at Hasta Wellness designed to enhance your beauty and well-being.
           </p>
@@ -199,7 +210,7 @@ const Treatments = () => {
   <div className="relative">
     <img
       src={treatment.img}
-      alt={treatment.name}
+      alt={treatment.alt}
       className="rounded-t-xl w-full"
     />
     {/* Hover Mask */}

@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col">
           <div className="mb-4">
           <img className="w-[143px] h-[50px]" src={img} alt="img" />
-            <p className="mt-3">Your trusted partner for healthcare excellence.</p>
+            <p className="mt-3">Book Your Consultation with the Best Dental-Skin Clinic in Trivandrum.</p>
           </div>
           <button className="flex items-center gap-2 border-2 border-white text-white px-4 py-2 rounded-md mb-2 hover:bg-white hover:text-[#5A3E67]">
   <FaUserMd className="text-lg" />

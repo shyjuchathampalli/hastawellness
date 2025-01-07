@@ -87,7 +87,7 @@ const Doctors = () => {
             Our Doctors
           </h1>
           <p className=" mt-2 text-center lg:text-start">
-          Meet our team of dedicated specialists, ensuring your best smile and healthiest skin with personalised care.
+          Best Dermatologists and Skilled Cosmetic Dentist in Kazhakoottam in Kazhakoottam, Trivandrum
           </p>
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
@@ -115,7 +115,7 @@ const Doctors = () => {
               <div>
                 <img
                   src={e.img}
-                  alt="img"
+                  alt="Best Dental and SKin Care Specialists in Kazhakoottam"
                   className="rounded-t-xl w-full"
                 />
               </div>

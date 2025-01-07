@@ -14,7 +14,8 @@ const Featured = () => {
           Discover Our Exclusive Treatments
         </h1>
         <p className="text-lg text-white mb-6">
-        This process is effective for all skin types and ages. PRP facial rejuvenation is an excellent treatment option for individuals just starting to explore anti-aging and skin rejuvenation. Additionally, PRP facials are great for people looking to maintain healthy skin or enhance it before a big event
+        
+At Hasta Wellness Clinic in Kazhakoottam, Trivandrum, we offer expert treatments including Laser Hair Removal, PRP Therapy for Skin Rejuvenation, and Cosmetic Dentistry & Smile Designing to enhance your confidence. Discover tailored solutions like Post-Pregnancy Weight Loss Packages and Teen Skincare Treatments for glowing skin and overall wellness. Your journey to radiance starts here!
         </p>
         <button
           className="px-6 py-3 my-2 border-2 border-[#ffffff] text-[#ffffff] font-semibold rounded-lg hover:bg-[#DABC70] hover:text-white"
@@ -57,7 +58,7 @@ const Featured = () => {
       <div className="lg:w-1/2 flex justify-center items-center">
         <img
           src={featured}
-          alt="Featured Treatment"
+          alt="Trivandrum’s Trusted Skin and Dental Experts"
           className="w-[400px] h-[599px] h-auto rounded-lg" 
         />
       </div>
