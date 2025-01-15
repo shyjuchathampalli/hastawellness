@@ -25,14 +25,6 @@ import BodySculpting from "./treatments/BodySculpting";
 import GumTreatment from "./treatments/GumTreatment";
 import TattooRemoval from "./treatments/TattooRemoval";
 
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-R7SYFM0YGZ');
-
-ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname,
-});
-
 const App = () => {
   return (
     <div>

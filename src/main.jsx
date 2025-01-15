@@ -5,6 +5,14 @@ import App from './App.jsx';
 import './index.css';
 import { Helmet } from 'react-helmet';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-R7SYFM0YGZ');
+
+ReactGA.send({
+  hitType: "pageview",
+  page: window.location.pathname,
+});
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
