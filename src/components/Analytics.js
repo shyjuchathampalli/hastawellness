@@ -2,10 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ReactGA from "react-ga4";
 
-//ReactGA.initialize('G-R7SYFM0YGZ');
-ReactGA.initialize('G-R7SYFM0YGZ', {
-    debug: true,
-  });
+ReactGA.initialize('G-R7SYFM0YGZ');
 
 const Analytics = () => {
     const location = useLocation();
