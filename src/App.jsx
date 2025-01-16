@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom"; // Import Routes and Route
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -24,10 +23,13 @@ import Mesotherapy from "./treatments/Mesotherapy";
 import BodySculpting from "./treatments/BodySculpting";
 import GumTreatment from "./treatments/GumTreatment";
 import TattooRemoval from "./treatments/TattooRemoval";
+import Analytics from './components/Analytics';
+
 
 const App = () => {
   return (
     <div>
+      <Analytics />
       <ContactInfo />
       <Navbar />
       <main>
