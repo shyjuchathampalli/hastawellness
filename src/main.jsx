@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Helmet>
         <title>Hasta Wellness | Best Dental clinic and Skin care centre Trivandrum</title>
         <meta name='description' content='Best dental-skin clinic in Trivandrum offering cosmetic dentistry, smile designing, laser hair removal, PRP therapy, and advanced peels in Kazhakoottam.'/>
-        <meta name='kewords' content='prp therapy, skin care trivandrum, dental clinic trivandrum, laser hair removal, chemical peels, carbon peels, smile designing, mesotherapy' />
+        <meta name='keywords' content='prp therapy, skin care trivandrum, dental clinic trivandrum, laser hair removal, chemical peels, carbon peels, smile designing, mesotherapy' />
       </Helmet>
       <App />
     </Router>
