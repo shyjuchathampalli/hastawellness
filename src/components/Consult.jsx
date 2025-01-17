@@ -62,7 +62,7 @@ const Consult = () => {
       Treatment for: ${treatmentType}`;
   
       // Redirect to WhatsApp
-      //window.open(`https://wa.me/919778458883?text=${message}`, "_blank");
+      window.open(`https://wa.me/919778458883?text=${message}`, "_blank");
     };
 
   return (

@@ -18,10 +18,38 @@ const Contact = ({ closeForm }) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const { userFirstName, userLastName, userEmail, userNumber, treatmentType } = formData;
+
+    const payload = {
+      full_name: userFirstName,
+      last_name: userLastName,
+      email: userEmail,
+      phone: userNumber,
+      treatment_type: treatmentType,
+    };
+  
+    try {
+      // Send data to Laravel backend
+      const response = await axios.post("http://127.0.0.1:8000/api/enquiries", payload);
+      console.log(response.data.message);
+      alert("Your enquiry has been submitted!");
+    } catch (error) {
+      if (error.response) {
+        // The request was made and the server responded with a status code outside the range of 2xx
+        console.error("Error Response:", error.response.data);
+        console.error("Status:", error.response.status);
+        console.error("Headers:", error.response.headers);
+      } else if (error.request) {
+        // The request was made but no response was received
+        console.error("No Response:", error.request);
+      } else {
+        // Something happened in setting up the request
+        console.error("Error Message:", error.message);
+      }
+    }
 
     // Construct the WhatsApp message
     const message = `Hello, I would like to book an appointment. Here are my details:%0A
