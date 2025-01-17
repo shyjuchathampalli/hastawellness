@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../layouts/Button";
+import axios from 'axios';
 
 const Contact = ({ closeForm }) => {
   const [formData, setFormData] = useState({
