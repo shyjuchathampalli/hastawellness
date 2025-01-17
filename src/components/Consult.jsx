@@ -44,7 +44,7 @@ const Consult = () => {
       }
   
       // Construct the WhatsApp message
-      const message = `Hello, I would like to book an appointment. Here are my details:%0A
+      const message = `Hello, I would like to book an appointment with Hasta. Here are my details:%0A
       First Name: ${userFirstName}%0A
       Last Name: ${userLastName}%0A
       Email: ${userEmail}%0A
