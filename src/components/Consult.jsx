@@ -60,7 +60,7 @@ const Consult = () => {
       <div className="flex flex-col lg:flex-row items-start justify-between">
         {/* Left side: Call to action and phone numbers */}
         <div className="lg:w-1/2 mb-6 lg:mb-0 text-center lg:text-left">
-          <h2 className="text-3xl font-thin mb-4">Consult With Our Doctors</h2>
+          <h2 className="text-3xl font-thin mb-4">Consult With Our Doctors.......</h2>
           <p className="text-lg mb-4">
             We provide dental and dermatological treatment to patients in a comfortable and caring environment.
           </p>

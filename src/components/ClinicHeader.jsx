@@ -7,7 +7,7 @@ const ClinicHeader = () => {
         Discover Radiance & Wellness at Hasta – Best Dental-Skin Clinic in Trivandrum
       </h1>
       <h2 className="mt-4 text-xl text-center text-gray-600">
-        Your trusted clinic for flawless skin, radiant smiles, and holistic wellness in Kazhakoottam, Trivandrum
+        Your trusted clinic for flawless skin, radiant smiles, and holistic wellness in Kazhakoottam, Trivandrum...
       </h2>
     </div>
   );
