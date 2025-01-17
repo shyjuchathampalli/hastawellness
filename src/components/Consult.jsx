@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaPhoneAlt } from 'react-icons/fa'; // Import icons
+import axios from 'axios';
 
 const Consult = () => {
 
@@ -19,10 +20,28 @@ const Consult = () => {
       });
     };
   
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault();
   
       const { userFirstName, userLastName, userEmail, userNumber, treatmentType } = formData;
+
+      const payload = {
+        full_name: userFirstName,
+        last_name: userLastName,
+        email: userEmail,
+        phone: userNumber,
+        treatment_type: treatmentType,
+      };
+    
+      try {
+        // Send data to Laravel backend
+        const response = await axios.post("http://127.0.0.1:8000/api/enquiries", payload);
+        console.log(response.data.message);
+        alert("Your enquiry has been submitted!");
+      } catch (error) {
+        console.error(error);
+        alert("There was an error submitting your enquiry.");
+      }
   
       // Construct the WhatsApp message
       const message = `Hello, I would like to book an appointment. Here are my details:%0A
