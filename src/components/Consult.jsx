@@ -39,8 +39,18 @@ const Consult = () => {
         console.log(response.data.message);
         alert("Your enquiry has been submitted!");
       } catch (error) {
-        console.error(error);
-        alert("There was an error submitting your enquiry.");
+        if (error.response) {
+          // The request was made and the server responded with a status code outside the range of 2xx
+          console.error("Error Response:", error.response.data);
+          console.error("Status:", error.response.status);
+          console.error("Headers:", error.response.headers);
+        } else if (error.request) {
+          // The request was made but no response was received
+          console.error("No Response:", error.request);
+        } else {
+          // Something happened in setting up the request
+          console.error("Error Message:", error.message);
+        }
       }
   
       // Construct the WhatsApp message
@@ -52,7 +62,7 @@ const Consult = () => {
       Treatment for: ${treatmentType}`;
   
       // Redirect to WhatsApp
-      window.open(`https://wa.me/919778458883?text=${message}`, "_blank");
+      //window.open(`https://wa.me/919778458883?text=${message}`, "_blank");
     };
 
   return (
