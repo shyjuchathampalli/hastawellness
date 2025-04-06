@@ -195,8 +195,10 @@ const Footer = () => {
               Subscribe
             </button>
           </form>
-          <p className="mb-1">Phone: +91 97784 58883</p>
-          <p>Email: hello@hastawellnessclinic.com</p>
+          <p className="mb-1 text-sm">Phone: +91 97784 58883</p>
+          <p className="mb-4 text-sm">Email: hello@hastawellnessclinic.com</p>
+          <p className="text-sm mb-1">1st floor, Anjali Arcade, Near Nippon Toyoto</p>
+          <p className="text-sm">Technopark Phase 3, Kazhakkoottam, Kerala 695582</p>
         </div>
       </div>
 
